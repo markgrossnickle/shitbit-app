@@ -4,6 +4,33 @@
 
 The ShitBit mobile app is the companion client for the ShitBit smart scale. It connects to the hardware via Bluetooth Low Energy, records weigh-in sessions, and provides the social/sharing layer that makes ShitBit fun.
 
+## Brand & Tone
+
+The voice is deadpan serious with bathroom puns hiding in plain sight. Never gross, never juvenile — just dry, confident humor that rewards a second read.
+
+**Taglines:**
+- "Finally, a number that matters."
+- "Five minutes to install. Then just start logging."
+- "Know your worth."
+- "Data-driven dumps."
+
+**Key phrases to use in UI copy:**
+- Sessions are "deposits" or "contributions"
+- History tab is "The LogBook"
+- Leaderboards: "who's number one at number two?"
+- Privacy: "We never store your body weight. That would be personal. We only store the weight of your output, which is strictly professional."
+- Achievements: "The Pound-for-Pounder", "Regular as Clockwork", "First Drop"
+- Share feature: "Share the Load" — cryptic Wordle-style emoji grids only ShitBit users can decode
+- The scale is "the throne" or "porcelain confessional"
+- Empty states should be dry: "Nothing here yet. We believe in you." or "Your LogBook is empty. Sit tight."
+- Error states: "Something went wrong. This is on us, not you."
+
+**Rules:**
+- Never use poop emoji in the main UI (save it for the share encoder)
+- Keep feature descriptions sounding like a real premium product
+- Humor comes from treating something absurd with complete seriousness
+- The app should feel like a fitness tracker that took a wrong turn
+
 ## Tech Stack
 
 - **Framework**: React Native (Expo SDK 55, bare workflow for BLE access)
@@ -115,7 +142,7 @@ The ShitBit mobile app is the companion client for the ShitBit smart scale. It c
 
 ## Backend API
 
-The app talks to shitbit-web. Currently mocked in all API modules (USE_MOCK = true).
+The app talks to shitbit-api (Express + Prisma on Fly.io). Currently mocked in all API modules (USE_MOCK = true).
 
 Key endpoints:
 - `POST /auth/login` and `POST /auth/register`
